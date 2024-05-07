@@ -1,0 +1,150 @@
+@import url("https://use.fontawesome.com/releases/v6.5.1/css/all.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 
+    0 14px 28px rgba(0, 0, 0, 0.2),
+    0 10px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+.side-image {
+    width: 32%;
+    height: 100vh;
+    padding-top: 10%;
+    background-image: url('./images/halie-west-unsplash.jpeg');
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+  
+.logo-container {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    gap: 20px;
+}
+  
+#logo img {
+    height: 90%;
+}
+  
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+.sign-up-container{
+    right: 0;
+    width: 50%;
+    z-index: 1;
+    height: 100%;
+}
+
+.form-container form{
+    height: 100%;
+    min-height: 480px;
+    background: #fff;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+label {
+    font-size: 0.875rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #363636a2;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+  
+input {
+    width: 300px;
+    height: 100%;
+    border: 0.3px solid #e5e7eb;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+}
+  
+input:focus {
+    box-shadow: 2px 4px 10px lightgray;
+}
+
+input[type='text']:focus {
+    outline-color: blue;
+}
+  
+input[type='password']:focus {
+    outline-color: red;
+}
+  
+button {
+    color: white;
+    margin-left: 50px;
+    background-color: #596d48;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 4px 10px lightgray;
+    margin-bottom: 15px;
+}
+  
+button + p {
+    margin-left: 50px;
+    font-size: 1.1rem;
+}
+  
+span {
+    color: #596d48;
+    font-weight: 600;
+    cursor: pointer;
+}
+  
+.password-alert {
+    font-size: 0.8rem;
+    color: red;
+    display: none;
+}
+  
+h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.source{
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
